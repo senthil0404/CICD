@@ -11,6 +11,8 @@ namespace CICDSample.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            HelperLibrary.Customer ob = new HelperLibrary.Customer();
+            ob.GetCustomer();
             return View();
         }
     }
